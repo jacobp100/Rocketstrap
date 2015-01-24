@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test</title>
+		<link href="css/dark.min.css" rel="stylesheet">
+		<link href="css/glyphs.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<iframe id="viewport" seamless>
+			<!doctype html>
+			<html>
+				<head>
+					<link href="css/bootstrap.min.css" rel="stylesheet">
+					<style>
+						body {
+							color: red;
+						}
+					</style>
+				</head>
+				<body>
+
+				</body>
+			</html>
+		</iframe>
+		<!-- Edit the #editMe in the iframe -->
+		<!-- You can ignore everything below -->
+		<div id="header">
+			<div class="pull-left">
+				<div id="screenSizes" class="btn-group">
+					<button id="viewsize-xs" type="button" data-screen-size="0" class="btn btn-default"><span class="icon_mobile"></span></button>
+					<button id="viewsize-sm" type="button" data-screen-size="1" class="btn btn-default"><span class="icon_tablet"></span></button>
+					<button id="viewsize-md" type="button" data-screen-size="2" class="btn btn-default"><span class="icon_laptop"></span></button>
+					<button id="viewsize-lg" type="button" data-screen-size="3" class="btn btn-default"><span class="icon_desktop"></span></button>
+				</div>
+			</div>
+			<div class="pull-right">
+				<div id="designerMode">
+					<button id="editmode-preview" type="button" class="btn btn-default"><span class="glyphicon glyphicon-eye-open
+"></span></button>
+					<div class="btn-group">
+						<button id="editmode-designer" type="button" class="btn btn-default"><span class="text-primary">Designer</span></button>
+						<button id="editmode-HTML" type="button" class="btn btn-default"><span>HTML</button>
+						<button id="editmode-CSS" type="button" class="btn btn-default"><span>CSS</button>
+						<button id="editmode-JS" type="button" class="btn btn-default"><span>JS</button>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<h3>RocketStrap</h3>
+			</div>
+		</div>
+		<div id="sidebarContent">
+			<h5>Content</h5>
+			<div class="row">
+				<div class="col-sm-6" data-position-element-name="header">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Header</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="paragraph">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Paragraph</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="small">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Small</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="label">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Label</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="panel">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Panel</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="jumbotron">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Jumbotron</div>
+					</div>
+				</div>
+				<div class="col-sm-6" data-position-element-name="navigation">
+					<div class="thumbnail">
+						<img src="http://placehold.it/200x100">
+						<div class="caption text-center">Navigation</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sidebarProperties">
+			<div class="container-fluid">
+				<div id="propertiesPanel">
+					<h5>Panel</h5>
+					<label class="checkbox-inline">
+						<input type="checkbox" value="header">
+						Header
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" value="footer">
+						Footer
+					</label>
+				</div>
+				<div id="propertiesText">
+					<h5>Text</h5>
+					<div id="textStyles" class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Styles<span class="caret">&nbsp;</span></button>
+						<ul id="textStyles" class="dropdown-menu" role="menu">
+							<li id="textStylesH1"><a data-change-tag="h1" href="#">Heading 1</a></li>
+							<li id="textStylesH2"><a data-change-tag="h2" href="#">Heading 2</a></li>
+							<li id="textStylesH3"><a data-change-tag="h3" href="#">Heading 3</a></li>
+							<li id="textStylesH4"><a data-change-tag="h4" href="#">Heading 4</a></li>
+							<li id="textStylesH5"><a data-change-tag="h5" href="#">Heading 5</a></li>
+							<li id="textStylesH6"><a data-change-tag="h6" href="#">Heading 6</a></li>
+							<li class="divider"></li>
+							<li id="textStylesP"><a data-change-tag="p" data-remove-class="small" href="#">Paragraph</a></li>
+							<li id="textStylesSMALL"><a data-toggle-class="small" href="#">Small</a></li>
+						</ul>
+					</div>
+					<div id="textExtras" class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Extra&nbsp;<span class="caret"></span></button>
+						<ul id="textExtras" class="dropdown-menu" role="menu">
+							<li id="textExtrasSUBHEADING"><a data-wrap="small" href="#">Insert Subheading</a></li>
+							<li id="textExtrasLABEL"><a data-wrap="span" data-add-wrap-class="label label-default" href="#">Insert Label</a></li>
+							<li id="textExtrasBADGE"><a data-wrap="span" data-add-wrap-class="badge badge-default" href="#">Insert Badge</a></li>
+						</ul>
+					</div>
+					<p></p>
+					<div id="textColours" class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tint"></span>&nbsp;<span class="caret"></span></button>
+						<ul id="textColours" class="dropdown-menu" role="menu">
+							<li id="textColoursDEFAULT"><a data-colour="default" href="#">Default <span class="label label-default">&hellip;</span></a></li>
+							<li id="textColoursMUTED"><a data-colour="muted" href="#"><span class="text-muted">Muted</span></a></li>
+							<li id="textColoursPRIMARY"><a data-colour="primary" href="#"><span class="text-primary">Primary</span> <span class="label label-primary">&hellip;</span></a></li>
+							<li id="textColoursSUCCESS"><a data-colour="success" href="#"><span class="text-success">Success</span> <span class="label label-success">&hellip;</span></a></li>
+							<li id="textColoursINFO"><a data-colour="info" href="#"><span class="text-info">Info</span> <span class="label label-info">&hellip;</span></a></li>
+							<li id="textColoursWARNING"><a data-colour="warning" href="#"><span class="text-warning">Warning</span> <span class="label label-warning">&hellip;</span></a></li>
+							<li id="textColoursDANGER"><a data-colour="danger" href="#"><span class="text-danger">Danger</span> <span class="label label-danger">&hellip;</span></a></li>
+						</ul>
+					</div>
+					<div id="textBackground" class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-adjust"></span>&nbsp;<span class="caret"></span></button>
+						<ul id="textBackground" class="dropdown-menu" role="menu">
+							<li id="textBackgroundDEFAULT"><a data-colour="primary" href="#"><span class="glyphicon glyphicon-adjust
+"></span>&nbsp;Default</a></li>
+							<li id="textBackgroundPRIMARY"><a data-colour="primary" href="#"><span class="text-primary glyphicon glyphicon-adjust
+"></span>&nbsp;Primary</a></li>
+							<li id="textBackgroundSUCCESS"><a data-colour="success" href="#"><span class="text-success glyphicon glyphicon-adjust
+"></span>&nbsp;Success</a></li>
+							<li id="textColoursINFO"><a data-colour="info" href="#"><span class="text-info glyphicon glyphicon-adjust
+"></span>&nbsp;Info</a></li>
+							<li id="textBackgroundWARNING"><a data-colour="warning" href="#"><span class="text-warning glyphicon glyphicon-adjust
+"></span>&nbsp;Warning</a></li>
+							<li id="textBackgroundDANGER"><a data-colour="danger" href="#"><span class="text-danger glyphicon glyphicon-adjust
+"></span>&nbsp;Danger</a></li>
+						</ul>
+					</div>
+					<br>
+					<h6 class="small">Position</h6>
+					<div id="textAlign" class="btn-group">
+						<button id="textAlignLEFT" data-text-position="left" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+						<button id="textAlignCENTER" data-text-position="center" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+						<button id="textAlignRIGHT" data-text-position="right" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+						<button id="textAlignJUSTIFY" data-text-position="justify" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+					</div>
+				</div>
+				<div id="propertiesColumn">
+					<h5>Column</h5>
+					<h6 class="small">Position</h6>
+					<div class="btn-group">
+						<button data-target="column" data-text-position="left" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+						<button data-target="column" data-text-position="center" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+						<button data-target="column" data-text-position="right" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+						<button data-target="column" data-text-position="justify" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sidebarCode"></div>
+		<div id="label">
+			No content selected
+		</div>
+		<div id="elementRing">
+			<a id="delete"><span class="glyphicon glyphicon-remove"></span></a>
+		</div>
+		<div id="columnRing">
+			<a id="resizeLeft"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
+			<a id="resizeRight"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
+		</div>
+		<div id="rowRing"></div>
+		<div id="placementRing"></div>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+		<script src="js/prettyprint.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-jquery-factory.js"></script>
+		<script src="js/bootstrap-jquery-extras.js"></script>
+		<script src="js/rocketstrap-ui.js"></script>
+		<script src="js/rocketstrap-ui-data.js"></script>
+		<script src="js/rocketstrap-ui-init.js"></script>
+		<script>
+			$(function() {
+				initJStrap();
+				initJStrapUI();
+
+				// Test
+				var container = $('<div class="container-fluid" />');
+
+				var row = $('<div class="row" />');
+
+				var col1 = $('<div class="col-sm-6" />');
+				var col2 = $('<div class="col-sm-6" />');
+
+				var col1C1 = $('<h1 />').html('Test');
+
+				var col2C1 = $('<div class="panel panel-default" />');
+				var col2C2C1 = $('<div class="panel-heading" />').html('Another test');
+				var col2C2C2 = $('<div class="panel-body" />');
+				var col2C2C2C1 = $('<p />').html('Lorem Ipsum Dolor').addClass('text-primary');
+
+				col2C2C2.append(col2C2C2C1);
+
+				col2C1.append(col2C2C1).append(col2C2C2);
+
+				col1.append(col1C1);
+				col2.append(col2C1);
+
+				row.append(col1);
+				row.append(col2);
+
+				container.append(row);
+
+				$$().append(container);
+			});
+		</script>
+	</body>
+</html>

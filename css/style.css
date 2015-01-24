@@ -1,0 +1,139 @@
+body {
+	margin: 50px 280px 0;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	overflow: hidden;
+}
+body, #sidebarContent, #sidebarProperties, #sidebarCode {
+	transition: margin 0.4s ease-in-out;
+}
+/*#viewport {
+	transition: margin 0.1s ease-in-out, width 0.1s ease-in-out;
+}*/
+#rowRing, #columnRing, #elementRing, #placementRing {
+	position: absolute;
+	top: -20px;
+	border: 1px solid #08C;
+	border-radius: 3px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+	transition: all 0.125s linear;
+}
+#rowRing a, #columnRing a, #elementRing a {
+	display: block;
+	position: relative;
+	float: left;
+	color: #fff;
+	width: 1.6em;
+	height: 1.6em;
+	text-align: center;
+	background-color: #268bd2;
+	color: #fff;
+	border-radius: 100%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+	pointer-events: auto !important;
+}
+#rowRing a span, #columnRing a span, #elementRing a span {
+	position: relative;
+	margin-top: 0.3em;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+#elementRing {
+	z-index: 3;
+}
+#elementRing a {
+	margin: -0.3em -0.8em;
+	top: 100%;
+	left: 80%;
+
+	cursor: pointer;
+}
+#columnRing {
+	border-color: #f57900;
+	z-index: 2;
+}
+#columnRing a {
+	margin: -0.8em -1.1em 0;
+	top: 50%;
+	background-color: #f57900;
+
+	cursor: col-resize;
+}
+#rowRing {
+	border-color: #cc0000;
+}
+#placementRing {
+	border-color: #4e9a06;
+	z-index: 3;
+}
+#resizeRight {
+	float: right !important;
+}
+#sidebarProperties, #header, #sidebarContent, #sidebarCode {
+	position: fixed;
+}
+#sidebarProperties {
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	width: 280px;
+}
+#sidebarContent {
+	padding: 0 12px;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	width: 280px;
+}
+#sidebarCode {
+	margin-right: -560px;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	width: 560px;
+	border-left: 1px solid #0f1315;
+	z-index: 5;
+}
+#header {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	padding: 8px 12px;
+}
+#header h3 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 12px 0 0 -100px;
+	width: 200px;
+	color: transparent;
+	text-shadow: 0 1px 3px #252e32, 0 0 0 rgba(0,0,0,0.4), 0 1px 3px #252e32;
+}
+#viewport {
+	position: relative;
+	margin: 0;
+	left: 50%;
+	border: none;
+	border-radius: 1px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 0 80px rgba(0,0,0,0.2);
+	z-index: 0;
+}
+#label {
+	position: absolute;
+	display: none;
+	padding: 3px 12px;
+	border: 1px solid #fff;
+	background-color: #d33682;
+	color: #fdf6e3;
+	text-transform: capitalize;
+	z-index: 4;
+}
